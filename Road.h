@@ -16,13 +16,8 @@ class Road
 		}
 		Road(char Type , int Limit)
 		{
-			while ((Type!='A')&&(Type!='B')&&(Type!='C'))
-			{
-				cout<<"Enter a valid road type (A , B or C) : ";
-				cin>>Type;
-			}
-			Road_Type = Type;
-			Speed_Limit = Limit;
+			Set_Road_Type(Type);
+			Set_Speed_Limit(Limit);
 		}
 		bool Radar(int car_speed)
 		{
